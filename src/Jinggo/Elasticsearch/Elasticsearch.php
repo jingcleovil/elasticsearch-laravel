@@ -15,11 +15,6 @@ class Elasticsearch {
         $this->server   = Config::get("elasticsearch::elastic.es_server");
         $this->index    = Config::get("elasticsearch::elastic.index");
     }
-
-    public function test()
-    {
-        return $this->index;
-    }
     
     public function call($path, $http = array()) {
 
